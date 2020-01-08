@@ -127,7 +127,7 @@ namespace Spoti15
             cm.MenuItems.Add(menu);
 
             menu = new MenuItem();
-            menu.Checked = Autostart.IsEnabled();
+            //menu.Checked = Autostart.IsEnabled();
             menu.Text = "&Autostart";
             menu.Click += AutostartClick;
             cm.MenuItems.Add(menu);
@@ -156,12 +156,14 @@ namespace Spoti15
 
         private static void AutostartClick(Object sender, EventArgs e)
         {
+            /*
             if (Autostart.IsEnabled())
                 Autostart.Disable();
             else
                 Autostart.Enable();
 
             autostartItem.Checked = !autostartItem.Checked;
+            */
         }
 
         private static void HideClick(Object sender, EventArgs e)
